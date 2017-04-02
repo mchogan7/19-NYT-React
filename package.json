@@ -10,7 +10,7 @@
     "dev": "webpack & node server",
     "start": "node server",
     "build": "webpack",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack -p --config webpack.prod.config.js",
   },
   "author": "MCH",
   "license": "MIT",
