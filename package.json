@@ -10,7 +10,7 @@
     "dev": "webpack & node server",
     "start": "node server",
     "build": "webpack",
-    "postinstall": "webpack -p --config webpack.prod.config.js",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "author": "MCH",
   "license": "MIT",
