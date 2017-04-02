@@ -20,7 +20,7 @@ var History = React.createClass({
   <div className="panel-body">
     <div>{search.date}</div>
     <a href={search.url}>Article Link</a>
-   <DeleteButton id ={search._id}/>
+   <DeleteButton id ={search._id} />
   </div>
 </div>
             );

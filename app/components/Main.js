@@ -44,10 +44,6 @@ var Main = React.createClass({
 
           // After we've done the post... then get the updated history
           helpers.getHistory().then(function(response) {
-            console.log("Current History", response.data);
-
-            console.log("History", response.data);
-
             this.setState({ history: response.data });
 
           }.bind(this));
@@ -87,7 +83,7 @@ var Main = React.createClass({
 
         <div className="row">
 
-          <History history={this.state.history} />
+          <History history={this.state.history} update={this.setTerm} />
 
         </div>
 
